@@ -5,7 +5,7 @@ public class Aircraft : MonoBehaviour
     public string model;
     public float currentSpeed;
     public float maxSpeed;
-    protected float acceleration;
+    protected float acceleration;// ENCAPSULATION
     public Vector3 direction;
     private float v;
 
@@ -31,7 +31,7 @@ public class Aircraft : MonoBehaviour
     {
         
     }
-
+    // ABSTRACTION
     public float Accelerate(float acceleration)
     {
         currentSpeed += acceleration;

@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class AirPlane : Aircraft
 {
-    
 
+    // INHERITANCE
     public AirPlane(string model, float acceleration, float maxSpeed, float currentSpeed) : base(model, acceleration, maxSpeed, currentSpeed)
     {
         this.model = model;
@@ -15,6 +15,7 @@ public class AirPlane : Aircraft
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // POLYMORPHISM
         // Correctly set the model property of the Aircraft class
         model = "Boeing 747";
         maxSpeed = 900f; // Example max speed in km/h
